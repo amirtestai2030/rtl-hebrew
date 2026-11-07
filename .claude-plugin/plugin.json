@@ -1,0 +1,24 @@
+{
+  "name": "rtl-hebrew",
+  "version": "0.2.0",
+  "description": "Draws Hebrew paragraphs of the conversation right-to-left and flush right, with headings, lists and emphasis kept; code blocks, tables and Latin paragraphs stay as they are. /rtl toggles it.",
+  "author": { "name": "Amir" },
+  "license": "MIT",
+  "keywords": ["mod", "rtl", "hebrew", "bidi", "transcript"],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "mode": {
+      "type": "string",
+      "title": "Which paragraphs read right-to-left",
+      "description": "auto: paragraphs with more Hebrew than Latin letters. always: every paragraph that has any Hebrew in it. off: draw nothing differently.",
+      "options": ["auto", "always", "off"],
+      "default": "auto"
+    },
+    "userMessages": {
+      "type": "boolean",
+      "title": "Also your own prompts",
+      "description": "Draw the prompts you typed right-to-left too, not only Claude's replies.",
+      "default": true
+    }
+  }
+}
